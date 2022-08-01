@@ -1,0 +1,1 @@
+web: gunicorn abdullah.wsgi
