@@ -134,7 +134,9 @@ def agent(request):
     agents_objects = agents.objects.all()
     return render(request, 'agent.html',{'agents_objects':agents_objects} )
 def properties(request):
-    return render(request, 'properties.html')
+    plots_objects = plots.objects.all()   
+    return render(request, 'properties.html',{'plots_objects':plots_objects})
+
 def blog(request):
     blogs_objects = blogs.objects.all()
     return render(request, 'blog.html', {'blogs_objects':blogs_objects})
