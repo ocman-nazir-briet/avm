@@ -1,1 +1,1 @@
-web: gunicorn abdullah.wsgi
+web: gunicorn. abdullah.wsgi
